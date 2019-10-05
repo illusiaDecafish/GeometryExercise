@@ -1,0 +1,1511 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     56254,       1503]
+NotebookOptionsPosition[     48591,       1384]
+NotebookOutlinePosition[     48939,       1399]
+CellTagsIndexPosition[     48896,       1396]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+http://www.suguru.jp/figure100/
+http://www.suguru.jp/www.monjirou.net/figure100/figure1_4.pdf
+etc...\
+\>", "Text",
+ CellChangeTimes->{{3.778893848655772*^9, 3.778893859510664*^9}, {
+  3.778902624437014*^9, 3.7789026254256144`*^9}, {3.778983476528344*^9, 
+  3.7789834778995132`*^9}},ExpressionUUID->"3317f729-a60e-48c4-abcf-\
+3855fffb5481"],
+
+Cell[CellGroupData[{
+
+Cell["Q1", "Subsubsection",
+ CellChangeTimes->{{3.77889446840728*^9, 3.7788944825446577`*^9}, 
+   3.778983495280847*^9},ExpressionUUID->"91e116c5-23d0-4e38-b1a5-\
+e39b36f935d2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q1", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "a", ",", "b"}], "}"}], "]"}], "==", 
+        RowBox[{"30", "Degree"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "c"}], "]"}], "\[Equal]", "1"}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Triangle", "[", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "]"}], "\[Equal]",
+         "x"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7788931546147127`*^9, 3.778893229223419*^9}, {
+   3.778893354032733*^9, 3.7788933608142643`*^9}, {3.7788933929797907`*^9, 
+   3.778893393382553*^9}, {3.778893792120256*^9, 3.778893800837188*^9}, 
+   3.77889383148559*^9},
+ CellLabel->
+  "In[190]:=",ExpressionUUID->"31003df1-80f1-4115-a1c9-5e8409631cea"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q1", "]"}]], "Input",
+ CellChangeTimes->{{3.778893876577014*^9, 3.778893889792351*^9}, 
+   3.778893941914975*^9},
+ CellLabel->
+  "In[191]:=",ExpressionUUID->"0daa734b-f969-45e4-876b-7db398647ef2"],
+
+Cell[BoxData[
+ RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.778893944001663*^9, 3.778893944846466*^9}},
+ CellLabel->
+  "In[192]:=",ExpressionUUID->"d2796f1e-671c-4677-801b-dd0052f8a80d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q2", "Subsubsection",
+ CellChangeTimes->{{3.778894486904711*^9, 3.778894494698845*^9}, 
+   3.778983498903431*^9},ExpressionUUID->"77ab21b3-97d4-4f43-82f2-\
+fb648576dac9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q2", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g", ",", 
+         "h", ",", "i", ",", "j", ",", "k", ",", "l"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "15"}], ",", 
+       RowBox[{
+        RowBox[{"Midpoint", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b"}], "}"}], "]"}], "\[Equal]", "e"}], ",", 
+       RowBox[{
+        RowBox[{"Midpoint", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "c"}], "}"}], "]"}], "\[Equal]", "f"}], ",", 
+       RowBox[{
+        RowBox[{"Midpoint", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "d"}], "}"}], "]"}], "\[Equal]", "g"}], ",", 
+       RowBox[{
+        RowBox[{"Midpoint", "[", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "a"}], "}"}], "]"}], "\[Equal]", "h"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "f"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"d", ",", "e"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "i"}], "}"}]}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "g"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "f"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "j"}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"c", ",", "h"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "g"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "k"}], "}"}]}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"d", ",", "e"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"c", ",", "h"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "l"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Polygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "j", ",", "k", ",", "l"}], "}"}], "]"}], "]"}], 
+        "\[Equal]", "x"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778893827963615*^9, 3.7788938285131817`*^9}, {
+  3.7788938997151327`*^9, 3.7788939212487297`*^9}, {3.778893963831365*^9, 
+  3.7788940509612103`*^9}, {3.778894122118734*^9, 3.7788942782501287`*^9}, {
+  3.778894335996792*^9, 3.778894429529492*^9}},
+ CellLabel->
+  "In[193]:=",ExpressionUUID->"df14c7b8-78f0-419f-9a30-28def4e1c577"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q2", "]"}]], "Input",
+ CellChangeTimes->{{3.778894369122088*^9, 3.7788943763602133`*^9}},
+ CellLabel->
+  "In[194]:=",ExpressionUUID->"1b0e29d3-99da-4d28-b9e0-7ff844567528"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.77889443425401*^9, 3.778894453591506*^9}},
+ CellLabel->
+  "In[195]:=",ExpressionUUID->"44092ccf-198b-4210-98d7-1953c8dbbb8b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q4", "Subsubsection",
+ CellChangeTimes->{{3.778894542177238*^9, 3.778894545065309*^9}, 
+   3.7789835014778423`*^9},ExpressionUUID->"4ffec22a-5af7-48c6-a1e1-\
+3549d287bce9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q4", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "g", ",", "h"}], 
+        "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"e", ",", "b", ",", "g", ",", "h"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"e", ",", "b", ",", "g"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "g", ",", "h"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"g", ",", "h", ",", "e"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"h", ",", "e", ",", "b"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"a", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"g", ",", "b"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"e", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"b", ",", "c"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"x", "==", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"g", ",", "b"}], "]"}], "\[Equal]", 
+        RowBox[{"x", "+", "4"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "e"}], "]"}], "\[Equal]", 
+        RowBox[{"x", "-", "4"}]}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Polygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"e", ",", "b", ",", "g", ",", "h"}], "}"}], "]"}], "]"}], "==", 
+        RowBox[{
+         RowBox[{"80", "/", "100"}], 
+         RowBox[{"Area", "[", 
+          RowBox[{"RegularPolygon", "[", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], 
+          "]"}]}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778894547627762*^9, 3.778894601868992*^9}, {
+  3.77889465573274*^9, 3.778894778480997*^9}, {3.778894835417745*^9, 
+  3.778895121584792*^9}, {3.778895236549851*^9, 3.77889526023072*^9}, {
+  3.7788952917106953`*^9, 3.778895302488718*^9}},
+ CellLabel->
+  "In[196]:=",ExpressionUUID->"58dea86f-579d-4ada-9fb5-8d53ec5f79da"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q4", "]"}]], "Input",
+ CellChangeTimes->{{3.7788946690652122`*^9, 3.7788946728306723`*^9}},
+ CellLabel->
+  "In[197]:=",ExpressionUUID->"b2003c87-34e7-432e-be54-b75041a90d51"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778895314818379*^9, 3.7788953298701363`*^9}},
+ CellLabel->
+  "In[198]:=",ExpressionUUID->"9396830b-eb0b-4b40-b53b-f40312976dcb"],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"y", "\[Equal]", 
+      RowBox[{"x", "^", "2"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"8", "/", "10"}], 
+       RowBox[{"x", "^", "2"}]}], "\[Equal]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "-", "4"}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "+", "4"}], ")"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7788951831243*^9, 3.778895228969372*^9}, {
+  3.778895339467835*^9, 3.77889538707692*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"b96416cb-da79-461a-ba3d-a7f9e275f41d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q5", "Subsubsection",
+ CellChangeTimes->{{3.7788954485502367`*^9, 3.778895451312305*^9}, 
+   3.778983504393407*^9},ExpressionUUID->"043e2478-7eb6-4b5d-bc46-\
+da5a173cc04e"],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"15", "*", "10", "*", "2"}], "+", 
+       RowBox[{"x", "*", "10", "*", "2"}], "+", 
+       RowBox[{"x", "*", "15", "*", "2"}]}], "\[Equal]", "a"}], ",", 
+     RowBox[{
+      RowBox[{"3", "a"}], "\[Equal]", 
+      RowBox[{"a", "+", 
+       RowBox[{"9", "*", "2", "*", "x", "*", "10"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "x"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.778895452486896*^9, 3.778895544227027*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"d4b8f54e-a33e-4b1c-981a-e735515e780c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q18 (very slow)", "Subsubsection",
+ CellChangeTimes->{{3.778895883797009*^9, 3.7788958871694593`*^9}, {
+   3.778902781960103*^9, 3.778902784850806*^9}, 
+   3.7789835073632107`*^9},ExpressionUUID->"191982f9-1bb8-4ff3-a8bb-\
+3ffbd183178f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q18", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "p"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "a", ",", "b"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"68", "Degree"}]}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"AngleBisector", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+           RowBox[{"AngleBisector", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "c", ",", "a"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "p"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "p", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7788958899727707`*^9, 3.778896035155427*^9}, {
+  3.7788962572991257`*^9, 3.778896281988694*^9}},
+ CellLabel->
+  "In[199]:=",ExpressionUUID->"8a3f8e71-939b-4649-8aad-9e1fca09572a"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q18", "]"}]], "Input",
+ CellChangeTimes->{{3.778895985947873*^9, 3.778895992312517*^9}},
+ CellLabel->
+  "In[200]:=",ExpressionUUID->"78dd5540-e989-48df-92a6-754bccba2528"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778896043320264*^9, 3.7788960493374567`*^9}},
+ CellLabel->
+  "In[201]:=",ExpressionUUID->"4ba131d9-284a-4ded-8538-c28adeb7f355"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q21", "Subsubsection",
+ CellChangeTimes->{{3.778896640904426*^9, 3.778896643010957*^9}, 
+   3.7789835089269037`*^9},ExpressionUUID->"1a47cc8c-6c18-4517-9de3-\
+53bfbc61d88f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q21", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "a", ",", "b", ",", "c", ",", "p", ",", "q", ",", "r", ",", "pq", ",",
+          "qr", ",", "rp"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"p", ",", "pq", ",", "q", ",", "qr", ",", "r", ",", "rp"}], 
+         "}"}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"p", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"q", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"b", ",", "c"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"r", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"c", ",", "a"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"3", 
+         RowBox[{"EuclideanDistance", "[", 
+          RowBox[{"a", ",", "p"}], "]"}]}], "\[Equal]", 
+        RowBox[{"2", 
+         RowBox[{"EuclideanDistance", "[", 
+          RowBox[{"p", ",", "b"}], "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"RegularPolygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "]"}], "\[Equal]",
+         "150"}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"RegularPolygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"p", ",", "pq", ",", "q", ",", "qr", ",", "r", ",", "rp"}],
+            "}"}], "]"}], "]"}], "\[Equal]", "x"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.778896358730843*^9, 3.778896562368558*^9}, {
+  3.778896606299199*^9, 3.778896610933796*^9}},
+ CellLabel->
+  "In[202]:=",ExpressionUUID->"10237731-1b93-468e-8081-8602d7291fac"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q21", "]"}]], "Input",
+ CellChangeTimes->{{3.778896474934887*^9, 3.7788964798254547`*^9}},
+ CellLabel->
+  "In[203]:=",ExpressionUUID->"10b93a61-ae07-4d4c-9673-7589257231ce"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778896567297682*^9, 3.778896573762475*^9}},
+ CellLabel->
+  "In[204]:=",ExpressionUUID->"93a9cc84-6d7b-4394-a9f8-363ba041a953"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q24", "Subsubsection",
+ CellChangeTimes->{{3.778896645189866*^9, 3.778896646910301*^9}, 
+   3.778983510377894*^9},ExpressionUUID->"2fbcf69d-d563-4eaa-a9f4-\
+aa1e588d19a1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q24", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "o"}], "}"}], ",", 
+       RowBox[{"{", "r", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "8"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "\[Equal]", "10"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"c", ",", "a"}], "]"}], "\[Equal]", "6"}], ",", 
+       RowBox[{
+        RowBox[{"Insphere", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Circle", "[", 
+         RowBox[{"o", ",", "r"}], "]"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",\
+
+ CellChangeTimes->{{3.778896635271599*^9, 3.77889677718752*^9}, {
+  3.778902830596717*^9, 3.778902835542564*^9}},
+ CellLabel->
+  "In[208]:=",ExpressionUUID->"72cbada1-0808-4d16-83ef-cf083c911d61"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q24", "]"}]], "Input",
+ CellChangeTimes->{{3.778896733550892*^9, 3.778896737293961*^9}},
+ CellLabel->
+  "In[209]:=",ExpressionUUID->"6a1ef14c-a6f6-42f5-a028-cba8c6c23efe"],
+
+Cell[BoxData[
+ RowBox[{"r", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778896787741714*^9, 3.7788967946243*^9}},
+ CellLabel->
+  "In[210]:=",ExpressionUUID->"cb1e9cc6-e661-4d77-93fe-d9d9557babd0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q25", "Subsubsection",
+ CellChangeTimes->{{3.7788968266903877`*^9, 3.778896828590275*^9}, 
+   3.778983512943503*^9},ExpressionUUID->"1687e630-0933-46bf-987a-\
+80b306f04d01"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q25", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "p"}], 
+        "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "d", ",", "b"}], "}"}], "]"}], ",", 
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "c", ",", "e"}], "}"}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"52", "Degree"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "c", ",", "a"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"65", "Degree"}]}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "e"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"c", ",", "d"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "p"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "p", ",", "e"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7788919160951843`*^9, 3.7788920387194433`*^9}, {
+  3.778892069219366*^9, 3.778892079392494*^9}, {3.778892112972404*^9, 
+  3.7788921546880074`*^9}, {3.778896831360963*^9, 3.778896832832717*^9}},
+ CellLabel->
+  "In[211]:=",ExpressionUUID->"5a1fda08-53a3-4dcf-a379-47e9cb547702"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q25", "]"}]], "Input",
+ CellChangeTimes->{{3.778896841021167*^9, 3.7788968418426657`*^9}},
+ CellLabel->
+  "In[212]:=",ExpressionUUID->"680a8147-5995-4336-bd00-604d05f16b05"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778896847011319*^9, 3.77889685394849*^9}},
+ CellLabel->
+  "In[213]:=",ExpressionUUID->"3894b12c-4417-4541-856c-3ee8336353b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q41 (incorrect result)", "Subsubsection",
+ CellChangeTimes->{{3.7788969061969757`*^9, 3.778896910041236*^9}, {
+   3.778902897980235*^9, 3.778902910186138*^9}, 
+   3.77898351587987*^9},ExpressionUUID->"6c2fdd07-9226-4140-8d10-\
+88f1b5135853"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q41", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"o", ",", "a", ",", "b", ",", "c", ",", "d", ",", "e"}], 
+        "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"e", ",", "o"}], "}"}], "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"o", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"e", ",", "o", ",", "d"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"20", "Degree"}]}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b"}], "}"}], "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"d", ",", "e"}], "}"}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"b", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"o", ",", "d"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"a", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"o", ",", "e"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"c", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"o", ",", "e"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"o", ",", "a"}], "]"}], "\[Equal]", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "==", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "==", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"c", ",", "d"}], "]"}], "==", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"d", ",", "e"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "d", ",", "e"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778896913552568*^9, 3.778896946267309*^9}, {
+   3.778897005152337*^9, 3.7788971130810966`*^9}, {3.77890294209614*^9, 
+   3.7789029846511*^9}, 
+   3.778984312005679*^9},ExpressionUUID->"6f0041b4-6f34-415e-b9eb-\
+b7de7bb19b25"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q41", "]"}]], "Input",
+ CellChangeTimes->{{3.778896915759338*^9, 3.778896920053175*^9}, {
+  3.77889699472178*^9, 3.778896995391*^9}},
+ CellLabel->
+  "In[219]:=",ExpressionUUID->"4462bdde-01b0-4057-af35-f775ad5ecb55"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q64", "Subsubsection",
+ CellChangeTimes->{{3.778897233115761*^9, 3.778897235130867*^9}, 
+   3.7789835181073427`*^9},ExpressionUUID->"17f656f2-8fac-4647-ae35-\
+4425b91af58f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q64", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", 
+         RowBox[{"c", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+         RowBox[{"d", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], ",", "e"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "e"}], "}"}], "]"}], ",", 
+       RowBox[{"RegularPolygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"b", ",", "c", ",", "d", ",", "e"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "c", ",", "e"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", "*", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.778897231936597*^9},
+ CellLabel->
+  "In[220]:=",ExpressionUUID->"66bdf964-7fb8-4b13-ac11-9328fc7eaa13"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q64", "]"}]], "Input",
+ CellChangeTimes->{{3.778897238834276*^9, 3.778897243444968*^9}},
+ CellLabel->
+  "In[221]:=",ExpressionUUID->"245199a0-bb82-47af-9d90-7cc8731da121"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778897245517301*^9, 3.778897259152261*^9}},
+ CellLabel->
+  "In[222]:=",ExpressionUUID->"4af8bbc7-110a-4240-8426-35831c6d4876"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q79", "Subsubsection",
+ CellChangeTimes->{{3.778897319455119*^9, 3.778897321756617*^9}, 
+   3.778983520267439*^9},ExpressionUUID->"c94057ca-bc89-4cd0-bb91-\
+3026a9712a73"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q79", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], ",", 
+       RowBox[{"{", "l", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "==", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "d", ",", "a"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "\[Equal]", "12"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"c", ",", "d"}], "]"}], "\[Equal]", 
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"d", ",", "a"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Polygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], "]"}], 
+        "\[Equal]", "64"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "l"}]}], "}"}]}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7788973234478397`*^9, 3.778897481724247*^9}},
+ CellLabel->
+  "In[223]:=",ExpressionUUID->"b9cee501-5736-4216-9c18-ac1fad9183eb"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q79", "]"}]], "Input",
+ CellChangeTimes->{{3.778897412651342*^9, 3.778897417551753*^9}},
+ CellLabel->
+  "In[224]:=",ExpressionUUID->"6d7e42b0-3ec9-4b9c-b5e9-0e803fa3f8de"],
+
+Cell[BoxData[
+ RowBox[{"l", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.77889748633899*^9, 3.7788974939174223`*^9}},
+ CellLabel->
+  "In[225]:=",ExpressionUUID->"44b453bc-3ee7-438d-aae7-9b8bfb32643c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q81", "Subsubsection",
+ CellChangeTimes->{{3.7788975434340982`*^9, 3.778897545667313*^9}, {
+   3.778903099750917*^9, 3.7789031006387177`*^9}, {3.778903150124661*^9, 
+   3.778903155066676*^9}, 3.778983522832292*^9, 
+   3.778984721111*^9},ExpressionUUID->"8b320998-ac24-450a-b74b-b460e8eba999"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q81", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "p"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Polygon", "[", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], "}"}], 
+         ",", "\"\<Equiangular\>\""}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "p"}], "}"}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"c", ",", "d", ",", "p"}], "}"}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"c", ",", "p", ",", "d"}], "}"}], ",", 
+         "\"\<Clockwise\>\""}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a", ",", "p", ",", "b"}], "}"}], ",", 
+         "\"\<Clockwise\>\""}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "3"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "\[Equal]", "4"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Area", "[", 
+          RowBox[{"Triangle", "[", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", "b", ",", "p"}], "}"}], "]"}], "]"}], "+", 
+         RowBox[{"Area", "[", 
+          RowBox[{"Triangle", "[", 
+           RowBox[{"{", 
+            RowBox[{"c", ",", "d", ",", "p"}], "}"}], "]"}], "]"}]}], 
+        "\[Equal]", "x"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778897547572703*^9, 3.7788975802947474`*^9}, {
+   3.7788978577459183`*^9, 3.778897928022849*^9}, {3.778898072713149*^9, 
+   3.778898097882724*^9}, 
+   3.7789847118006067`*^9},ExpressionUUID->"294ea073-a672-4506-9191-\
+433002c5698e"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q81", "]"}]], "Input",
+ CellChangeTimes->{{3.778897889395342*^9, 3.7788978942493553`*^9}},
+ CellLabel->
+  "In[227]:=",ExpressionUUID->"9d0c1ddf-daa2-451b-8b4a-6a74052cc70e"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",ExpressionUUID->\
+"9c616969-c73b-43c4-a585-8fb0e8e84295"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q84 (too long to wait)", "Subsubsection",
+ CellChangeTimes->{{3.778898239046768*^9, 3.778898241203155*^9}, {
+   3.77890335917763*^9, 3.778903368683919*^9}, 
+   3.778983525667075*^9},ExpressionUUID->"7d9a52c9-e8ce-44d1-8429-\
+3377bb9a33d0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q84", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "p"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "a", ",", "b"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"68", "Degree"}]}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"p", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"d", ",", 
+         RowBox[{"HalfLine", "[", 
+          RowBox[{"{", 
+           RowBox[{"b", ",", "c"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"AngleBisector", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+           RowBox[{"AngleBisector", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "c", ",", "d"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "p"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "p", ",", "b"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778898242747884*^9, 3.7788984562206593`*^9}, {
+  3.7788985122821617`*^9, 3.778898529042069*^9}},
+ CellLabel->
+  "In[228]:=",ExpressionUUID->"cffe2213-961a-4b9e-ad6f-5bb90a39e4cb"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q84", "]"}]], "Input",
+ CellChangeTimes->{{3.7788984287728233`*^9, 3.778898433753241*^9}},
+ CellLabel->
+  "In[229]:=",ExpressionUUID->"9954123a-4f8a-4455-a86e-a9e23819549c"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778898870059306*^9, 
+  3.778898910525777*^9}},ExpressionUUID->"068b6d2b-9694-4a35-a739-\
+bd2796cc27a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q85", "Subsubsection",
+ CellChangeTimes->{{3.778898948832698*^9, 3.778898950830708*^9}, 
+   3.778983527432764*^9},ExpressionUUID->"bdf183a4-ca9d-4122-8f13-\
+ebb98589199a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q85", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e"}], "}"}], ",", 
+       RowBox[{"{", "l", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "e"}], "}"}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"e", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"b", ",", "c"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"d", ",", "a", ",", "b"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"d", ",", "a"}], "]"}], "\[Equal]", "16"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "\[Equal]", "20"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "=", "10"}], ",", 
+       RowBox[{
+        RowBox[{"2", 
+         RowBox[{"Area", "[", 
+          RowBox[{"Triangle", "[", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", "b", ",", "e"}], "}"}], "]"}], "]"}]}], 
+        "\[Equal]", 
+        RowBox[{"Area", "[", 
+         RowBox[{"Polygon", "[", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], "]"}]}],
+        ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "e"}], "]"}], "==", "l"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.778898953016303*^9, 3.7788990848792562`*^9}, {
+  3.778899118519719*^9, 3.778899128767076*^9}, {3.778899168481949*^9, 
+  3.778899169512899*^9}, {3.778899214359087*^9, 3.778899226339245*^9}, {
+  3.778899400108302*^9, 3.7788994060174017`*^9}, {3.778899499491963*^9, 
+  3.778899504158587*^9}, {3.778902533086371*^9, 3.77890253321859*^9}},
+ CellLabel->
+  "In[248]:=",ExpressionUUID->"0ca52371-7dde-448a-b818-62e01e066046"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q85", "]"}]], "Input",
+ CellChangeTimes->{{3.778899086109604*^9, 3.778899090347131*^9}},
+ CellLabel->
+  "In[249]:=",ExpressionUUID->"fb04065d-636c-4b34-b618-24f8f8d302d9"],
+
+Cell[BoxData[
+ RowBox[{"l", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778899248031631*^9, 3.778899253028998*^9}},
+ CellLabel->
+  "In[250]:=",ExpressionUUID->"3d752c22-e316-4e48-8d9b-a1324751faf4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Q86 (sometimes good, sometimes bad. how can I specify outer or inner of \
+angle?)\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.7788995273143663`*^9, 3.778899529166081*^9}, 
+   3.778903932853982*^9, {3.778903974599728*^9, 3.778903986405407*^9}, 
+   3.778983531393721*^9, {3.7789849129599648`*^9, 
+   3.7789849693330812`*^9}},ExpressionUUID->"b14f151c-da54-4ee9-bcd8-\
+92ccddc35595"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q86", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Polygon", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "a", ",", "d"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"60", "Degree"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"30", "Degree"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"c", ",", "d", ",", "a"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"20", "Degree"}]}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "c", ",", "d"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7788995306538057`*^9, 3.778899626300329*^9}, {
+  3.778899698043812*^9, 3.778899699481511*^9}},
+ CellLabel->
+  "In[251]:=",ExpressionUUID->"adbdc606-d520-4262-a2dd-51f36dfc0956"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q86", "]"}]], "Input",
+ CellChangeTimes->{{3.778899628793159*^9, 3.778899633499889*^9}},
+ CellLabel->
+  "In[252]:=",ExpressionUUID->"7f008236-16cd-4ac7-b99f-e480363b922e"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7788996681766567`*^9, 3.7788996725691833`*^9}},
+ CellLabel->
+  "In[253]:=",ExpressionUUID->"c8fbf441-7830-4c2e-895a-b69d7311eb89"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q89", "Subsubsection",
+ CellChangeTimes->{{3.778985174089053*^9, 
+  3.778985181687686*^9}},ExpressionUUID->"1fe39e56-3030-4ccf-bae9-\
+3e5d1a59f584"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"q89", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"a", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3"}], "}"}]}], ",", 
+         RowBox[{"b", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+         RowBox[{"c", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"5", ",", "1"}], "}"}]}]}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "c", ",", "a"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"x", " ", "Degree"}]}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ri", "=", 
+   RowBox[{"RandomInstance", "[", "q89", "]"}]}], ";"}]}], "Input",ExpressionU\
+UID->"90dd22a3-72ec-4e41-a42a-1a8e2373a454"],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"ri", "[", "\"\<Graphics\>\"", "]"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",ExpressionUUID->\
+"21dc5896-1a13-47d1-94e1-de9d858e9c71"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"ri", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",ExpressionUUID->\
+"62e6d535-16b8-47b3-944f-c5530b117a50"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q97", "Subsubsection",
+ CellChangeTimes->{{3.7788997601005287`*^9, 3.77889976225459*^9}, 
+   3.7789835337223377`*^9},ExpressionUUID->"582e6eca-8966-43ef-aee9-\
+3df8b25652d6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q97", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e"}], "}"}], ",", 
+       RowBox[{"{", "x", "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"b", ",", "c", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "c", ",", "d"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "3"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "c"}], "]"}], "\[Equal]", "6"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"c", ",", "d"}], "]"}], "\[Equal]", "5"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "c"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "d"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "e"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Triangle", "[", 
+          RowBox[{"{", 
+           RowBox[{"e", ",", "b", ",", "c"}], "}"}], "]"}], "]"}], "\[Equal]",
+         "x"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778899763811146*^9, 3.778899942324478*^9}, {
+  3.7789000191082497`*^9, 3.778900023211398*^9}},
+ CellLabel->
+  "In[254]:=",ExpressionUUID->"15e7e715-a2a8-42b8-b648-5f21d0126b6b"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q97", "]"}]], "Input",
+ CellChangeTimes->{{3.778899943573546*^9, 3.7788999488145638`*^9}},
+ CellLabel->
+  "In[257]:=",ExpressionUUID->"319d44ef-7d80-4291-93c1-e6d3f28373ef"],
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.77889995551222*^9, 3.778899961570643*^9}},
+ CellLabel->
+  "In[258]:=",ExpressionUUID->"567ee35e-36bc-4dfe-80da-a0b0de8e640e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Q98", "Subsubsection",
+ CellChangeTimes->{{3.778900034688589*^9, 3.778900036526314*^9}, 
+   3.778983535825983*^9},ExpressionUUID->"b8f6fe8a-4f98-4e0e-9808-\
+8acab4ef11a0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q98", "=", 
+   RowBox[{"GeometricScene", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "f"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"l", ",", "x"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"a", ",", "b", ",", "d"}], "}"}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"b", ",", "d", ",", "c"}], "}"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "d"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"PlanarAngle", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", "d", ",", "c"}], "}"}], "]"}], "\[Equal]", 
+        RowBox[{"Pi", "/", "2"}]}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "15"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"b", ",", "d"}], "]"}], "\[Equal]", "10"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"c", ",", "d"}], "]"}], "\[Equal]", "10"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"a", ",", "d"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "c"}], "}"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Concurrent\>\"", ",", "e"}], "}"}]}], "]"}], ",", 
+       RowBox[{"Element", "[", 
+        RowBox[{"f", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{"b", ",", "d"}], "}"}], "]"}]}], "]"}], ",", 
+       RowBox[{"GeometricAssertion", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"e", ",", "f"}], "}"}], "]"}], ",", 
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{"b", ",", "d"}], "}"}], "]"}]}], "}"}], ",", 
+         "\"\<Perpendicular\>\""}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"EuclideanDistance", "[", 
+         RowBox[{"e", ",", "f"}], "]"}], "\[Equal]", "l"}], ",", 
+       RowBox[{
+        RowBox[{"Area", "[", 
+         RowBox[{"Triangle", "[", 
+          RowBox[{"{", 
+           RowBox[{"e", ",", "b", ",", "d"}], "}"}], "]"}], "]"}], "\[Equal]",
+         "x"}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.778900043889983*^9, 3.778900110138752*^9}, {
+   3.778900146410117*^9, 3.778900225856888*^9}, {3.778900305296463*^9, 
+   3.778900313539135*^9}, {3.7789008920803747`*^9, 3.7789009173782797`*^9}, 
+   3.778900968568461*^9, 3.778902585477414*^9},
+ CellLabel->
+  "In[259]:=",ExpressionUUID->"4f00252c-4761-4751-9267-8461bbcaf25f"],
+
+Cell[BoxData[
+ RowBox[{"RandomInstance", "[", "q98", "]"}]], "Input",
+ CellChangeTimes->{{3.7789002106836987`*^9, 3.778900215495104*^9}},
+ CellLabel->
+  "In[260]:=",ExpressionUUID->"ab7e3e34-d827-49a9-b279-5e6bcd2cf35e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"l", ",", "x"}], "}"}], "/.", 
+  RowBox[{"%", "[", "\"\<Quantities\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.778900232944936*^9, 3.7789002400634613`*^9}},
+ CellLabel->
+  "In[261]:=",ExpressionUUID->"b8e0ac70-4fe2-4a36-bcee-abbaca1d0cd7"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 547}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (2019\:5e745\:67083\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 349, 8, 81, "Text",ExpressionUUID->"3317f729-a60e-48c4-abcf-3855fffb5481"],
+Cell[CellGroupData[{
+Cell[932, 32, 177, 3, 45, "Subsubsection",ExpressionUUID->"91e116c5-23d0-4e38-b1a5-e39b36f935d2"],
+Cell[1112, 37, 1373, 36, 73, "Input",ExpressionUUID->"31003df1-80f1-4115-a1c9-5e8409631cea"],
+Cell[2488, 75, 243, 5, 30, "Input",ExpressionUUID->"0daa734b-f969-45e4-876b-7db398647ef2"],
+Cell[2734, 82, 220, 4, 30, "Input",ExpressionUUID->"d2796f1e-671c-4677-801b-dd0052f8a80d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2991, 91, 176, 3, 45, "Subsubsection",ExpressionUUID->"77ab21b3-97d4-4f43-82f2-fb648576dac9"],
+Cell[3170, 96, 3640, 96, 178, "Input",ExpressionUUID->"df14c7b8-78f0-419f-9a30-28def4e1c577"],
+Cell[6813, 194, 219, 4, 30, "Input",ExpressionUUID->"1b0e29d3-99da-4d28-b9e0-7ff844567528"],
+Cell[7035, 200, 243, 5, 30, "Input",ExpressionUUID->"44092ccf-198b-4210-98d7-1953c8dbbb8b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7315, 210, 178, 3, 45, "Subsubsection",ExpressionUUID->"4ffec22a-5af7-48c6-a1e1-3549d287bce9"],
+Cell[7496, 215, 2790, 72, 157, "Input",ExpressionUUID->"58dea86f-579d-4ada-9fb5-8d53ec5f79da"],
+Cell[10289, 289, 221, 4, 30, "Input",ExpressionUUID->"b2003c87-34e7-432e-be54-b75041a90d51"],
+Cell[10513, 295, 246, 5, 30, "Input",ExpressionUUID->"9396830b-eb0b-4b40-b53b-f40312976dcb"],
+Cell[10762, 302, 678, 20, 30, "Input",ExpressionUUID->"b96416cb-da79-461a-ba3d-a7f9e275f41d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11477, 327, 178, 3, 45, "Subsubsection",ExpressionUUID->"043e2478-7eb6-4b5d-bc46-da5a173cc04e"],
+Cell[11658, 332, 643, 17, 30, "Input",ExpressionUUID->"d4b8f54e-a33e-4b1c-981a-e735515e780c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12338, 354, 243, 4, 45, "Subsubsection",ExpressionUUID->"191982f9-1bb8-4ff3-a8bb-3ffbd183178f"],
+Cell[12584, 360, 1512, 40, 94, "Input",ExpressionUUID->"8a3f8e71-939b-4649-8aad-9e1fca09572a"],
+Cell[14099, 402, 218, 4, 30, "Input",ExpressionUUID->"78dd5540-e989-48df-92a6-754bccba2528"],
+Cell[14320, 408, 246, 5, 30, "Input",ExpressionUUID->"4ba131d9-284a-4ded-8538-c28adeb7f355"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14603, 418, 179, 3, 45, "Subsubsection",ExpressionUUID->"1a47cc8c-6c18-4517-9de3-53bfbc61d88f"],
+Cell[14785, 423, 2149, 59, 136, "Input",ExpressionUUID->"10237731-1b93-468e-8081-8602d7291fac"],
+Cell[16937, 484, 220, 4, 30, "Input",ExpressionUUID->"10b93a61-ae07-4d4c-9673-7589257231ce"],
+Cell[17160, 490, 244, 5, 30, "Input",ExpressionUUID->"93a9cc84-6d7b-4394-a9f8-363ba041a953"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17441, 500, 177, 3, 45, "Subsubsection",ExpressionUUID->"2fbcf69d-d563-4eaa-a9f4-aa1e588d19a1"],
+Cell[17621, 505, 1247, 34, 73, "Input",ExpressionUUID->"72cbada1-0808-4d16-83ef-cf083c911d61"],
+Cell[18871, 541, 218, 4, 30, "Input",ExpressionUUID->"6a1ef14c-a6f6-42f5-a028-cba8c6c23efe"],
+Cell[19092, 547, 242, 5, 30, "Input",ExpressionUUID->"cb1e9cc6-e661-4d77-93fe-d9d9557babd0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19371, 557, 179, 3, 45, "Subsubsection",ExpressionUUID->"1687e630-0933-46bf-987a-80b306f04d01"],
+Cell[19553, 562, 2040, 53, 115, "Input",ExpressionUUID->"5a1fda08-53a3-4dcf-a379-47e9cb547702"],
+Cell[21596, 617, 220, 4, 30, "Input",ExpressionUUID->"680a8147-5995-4336-bd00-604d05f16b05"],
+Cell[21819, 623, 243, 5, 30, "Input",ExpressionUUID->"3894b12c-4417-4541-856c-3ee8336353b4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22099, 633, 247, 4, 45, "Subsubsection",ExpressionUUID->"6c2fdd07-9226-4140-8d10-88f1b5135853"],
+Cell[22349, 639, 2633, 71, 157, "Input",ExpressionUUID->"6f0041b4-6f34-415e-b9eb-b7de7bb19b25"],
+Cell[24985, 712, 263, 5, 30, "Input",ExpressionUUID->"4462bdde-01b0-4057-af35-f775ad5ecb55"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25285, 722, 179, 3, 45, "Subsubsection",ExpressionUUID->"17f656f2-8fac-4647-ae35-4425b91af58f"],
+Cell[25467, 727, 1114, 31, 73, "Input",ExpressionUUID->"66bdf964-7fb8-4b13-ac11-9328fc7eaa13"],
+Cell[26584, 760, 218, 4, 30, "Input",ExpressionUUID->"245199a0-bb82-47af-9d90-7cc8731da121"],
+Cell[26805, 766, 244, 5, 30, "Input",ExpressionUUID->"4af8bbc7-110a-4240-8426-35831c6d4876"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27086, 776, 177, 3, 45, "Subsubsection",ExpressionUUID->"c94057ca-bc89-4cd0-bb91-3026a9712a73"],
+Cell[27266, 781, 1657, 45, 94, "Input",ExpressionUUID->"b9cee501-5736-4216-9c18-ac1fad9183eb"],
+Cell[28926, 828, 218, 4, 30, "Input",ExpressionUUID->"6d7e42b0-3ec9-4b9c-b5e9-0e803fa3f8de"],
+Cell[29147, 834, 245, 5, 30, "Input",ExpressionUUID->"44b453bc-3ee7-438d-aae7-9b8bfb32643c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29429, 844, 298, 4, 45, "Subsubsection",ExpressionUUID->"8b320998-ac24-450a-b74b-b460e8eba999"],
+Cell[29730, 850, 2249, 59, 136, "Input",ExpressionUUID->"294ea073-a672-4506-9191-433002c5698e"],
+Cell[31982, 911, 220, 4, 30, "Input",ExpressionUUID->"9d0c1ddf-daa2-451b-8b4a-6a74052cc70e"],
+Cell[32205, 917, 152, 3, 30, "Input",ExpressionUUID->"9c616969-c73b-43c4-a585-8fb0e8e84295"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32394, 925, 245, 4, 45, "Subsubsection",ExpressionUUID->"7d9a52c9-e8ce-44d1-8429-3377bb9a33d0"],
+Cell[32642, 931, 1824, 48, 115, "Input",ExpressionUUID->"cffe2213-961a-4b9e-ad6f-5bb90a39e4cb"],
+Cell[34469, 981, 220, 4, 30, "Input",ExpressionUUID->"9954123a-4f8a-4455-a86e-a9e23819549c"],
+Cell[34692, 987, 221, 5, 30, "Input",ExpressionUUID->"068b6d2b-9694-4a35-a739-bd2796cc27a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34950, 997, 177, 3, 45, "Subsubsection",ExpressionUUID->"bdf183a4-ca9d-4122-8f13-ebb98589199a"],
+Cell[35130, 1002, 2421, 62, 136, "Input",ExpressionUUID->"0ca52371-7dde-448a-b818-62e01e066046"],
+Cell[37554, 1066, 218, 4, 30, "Input",ExpressionUUID->"fb04065d-636c-4b34-b618-24f8f8d302d9"],
+Cell[37775, 1072, 244, 5, 30, "Input",ExpressionUUID->"3d752c22-e316-4e48-8d9b-a1324751faf4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38056, 1082, 391, 8, 45, "Subsubsection",ExpressionUUID->"b14f151c-da54-4ee9-bcd8-92ccddc35595"],
+Cell[38450, 1092, 1419, 38, 94, "Input",ExpressionUUID->"adbdc606-d520-4262-a2dd-51f36dfc0956"],
+Cell[39872, 1132, 218, 4, 30, "Input",ExpressionUUID->"7f008236-16cd-4ac7-b99f-e480363b922e"],
+Cell[40093, 1138, 248, 5, 30, "Input",ExpressionUUID->"c8fbf441-7830-4c2e-895a-b69d7311eb89"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40378, 1148, 154, 3, 45, "Subsubsection",ExpressionUUID->"1fe39e56-3030-4ccf-bae9-3e5d1a59f584"],
+Cell[40535, 1153, 1102, 33, 73, "Input",ExpressionUUID->"90dd22a3-72ec-4e41-a42a-1a8e2373a454"],
+Cell[41640, 1188, 218, 5, 30, "Input",ExpressionUUID->"21dc5896-1a13-47d1-94e1-de9d858e9c71"],
+Cell[41861, 1195, 153, 3, 30, "Input",ExpressionUUID->"62e6d535-16b8-47b3-944f-c5530b117a50"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42051, 1203, 180, 3, 45, "Subsubsection",ExpressionUUID->"582e6eca-8966-43ef-aee9-3df8b25652d6"],
+Cell[42234, 1208, 2120, 56, 136, "Input",ExpressionUUID->"15e7e715-a2a8-42b8-b648-5f21d0126b6b"],
+Cell[44357, 1266, 220, 4, 30, "Input",ExpressionUUID->"319d44ef-7d80-4291-93c1-e6d3f28373ef"],
+Cell[44580, 1272, 243, 5, 30, "Input",ExpressionUUID->"567ee35e-36bc-4dfe-80da-a0b0de8e640e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44860, 1282, 177, 3, 45, "Subsubsection",ExpressionUUID->"b8f6fe8a-4f98-4e0e-9808-8acab4ef11a0"],
+Cell[45040, 1287, 3016, 79, 157, "Input",ExpressionUUID->"4f00252c-4761-4751-9267-8461bbcaf25f"],
+Cell[48059, 1368, 220, 4, 30, "Input",ExpressionUUID->"ab7e3e34-d827-49a9-b279-5e6bcd2cf35e"],
+Cell[48282, 1374, 293, 7, 30, "Input",ExpressionUUID->"b8e0ac70-4fe2-4a36-bcee-abbaca1d0cd7"]
+}, Open  ]]
+}
+]
+*)
+
